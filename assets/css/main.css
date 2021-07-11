@@ -3988,7 +3988,7 @@ body.is-preload #header.alt .logo {
 
 .kb-section-body-cert > div {
   width: 16em;
-  margin: auto;
+  margin: 1em auto;
 }
 .cert-header {
   font-size: 1.2em;
