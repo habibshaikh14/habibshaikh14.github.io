@@ -3905,6 +3905,24 @@ body.is-preload #header.alt .logo {
   }
 }
 
+.about-me {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+.about-me li {
+  padding-left: 1em;
+  position: relative;
+}
+
+.about-me li .fa-angle-right {
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
 .kb-section-header {
   margin: 0;
   font-size: 1.5em;
