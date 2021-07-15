@@ -2728,7 +2728,7 @@ ul.icons li:last-child {
   padding-right: 0 !important;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 360px) {
   ul.icons li {
     padding: 0 0.3em 0 0;
   }
@@ -3934,6 +3934,27 @@ body.is-preload #header.alt .logo {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 736px) {
+  .kb-section-body > div {
+    width: 3.5em;
+    margin: 1em 1.5em;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .kb-section-body > div {
+    width: 3em;
+    margin: 1em 1.5em;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .kb-section-body > div {
+    width: 2.8em;
+    margin: 1em 1.5em;
+  }
 }
 
 .kb-section-body > div > div {
