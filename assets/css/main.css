@@ -303,7 +303,6 @@ h5,
 h6 {
   font-weight: 300;
   line-height: 1.5;
-  margin: 0 0 0.7em 0;
   letter-spacing: -0.025em;
 }
 
@@ -2368,7 +2367,6 @@ input[type="radio"]:focus + label:before {
   width: 10em;
   border-radius: 100%;
   padding: 0.65em;
-  margin: 0 0 2em 0;
   cursor: default;
 }
 
@@ -2432,7 +2430,6 @@ input[type="radio"]:focus + label:before {
 
 @media screen and (max-width: 736px) {
   .icon.major {
-    margin: 0 0 1.5em 0;
     padding: 0.35em;
   }
 
@@ -2532,7 +2529,6 @@ ol li {
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
   padding-left: 1em;
 }
 
@@ -2620,7 +2616,6 @@ ul.actions.special {
   justify-content: center;
   width: 100%;
   margin-left: 0;
-  margin-bottom: 1em;
 }
 
 ul.actions.special li:first-child {
@@ -2733,15 +2728,17 @@ ul.icons li:last-child {
   padding-right: 0 !important;
 }
 
+@media screen and (max-width: 480px) {
+  ul.icons li {
+    padding: 0 0.3em 0 0;
+  }
+}
+
 /* Section/Article */
 
 section.special,
 article.special {
   text-align: center;
-}
-
-header.major {
-  margin-bottom: 3em;
 }
 
 header.major h2 {
@@ -2753,7 +2750,7 @@ header.major h2:after {
   content: "";
   width: 3.25em;
   height: 2px;
-  margin: 0.7em 0 1em 0;
+  margin: 0.5em 0;
   border-radius: 2px;
 }
 
@@ -2775,10 +2772,6 @@ header.major.special {
 header.major.special h2:after {
   margin-left: auto;
   margin-right: auto;
-}
-
-footer.major {
-  margin-top: 2em;
 }
 
 @media screen and (max-width: 736px) {
@@ -2912,9 +2905,13 @@ table.alt tbody tr td {
   -ms-justify-content: center;
   justify-content: center;
   width: calc(100% + 2em);
-  margin: 0 0 2em -2em;
+  margin-left: -2em;
   padding: 0;
   list-style: none;
+}
+
+.features h4 {
+  font-weight: 400;
 }
 
 .features li {
@@ -2935,7 +2932,7 @@ table.alt tbody tr td {
 }
 
 .tasks {
-  margin-bottom: 1em !important;
+  margin-bottom: 1.5em !important;
 }
 
 .tasks li {
@@ -3094,7 +3091,6 @@ table.alt tbody tr td {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  margin: 0 0 2em 0;
 }
 
 .spotlight .content {
@@ -3106,10 +3102,6 @@ table.alt tbody tr td {
 
 .spotlight .content > :last-child {
   margin-bottom: 0;
-}
-
-.spotlight .content header.major {
-  margin: 0 0 2em 0;
 }
 
 .spotlight .image {
@@ -3808,7 +3800,7 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 736px) {
   #main > .main {
-    padding: 1em 2em 1em 2em;
+    padding: 2em;
   }
 
   #main > .main > .image.main:first-child {
@@ -3819,7 +3811,7 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 480px) {
   #main > .main {
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 2em 1.5em 2em 1.5em;
   }
 
   #main > .main > .image.main:first-child {
@@ -3830,7 +3822,7 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 360px) {
   #main > .main {
-    padding: 0.5em 1em 0.5em 1em;
+    padding: 2em 1em 2em 1em;
   }
 
   #main > .main > .image.main:first-child {
@@ -3859,7 +3851,7 @@ body.is-preload #header.alt .logo {
   -webkit-justify-content: wrap;
   -ms-justify-content: wrap;
   justify-content: center;
-  padding: 2em 4em 0;
+  padding: 2em 4em;
 }
 
 #footer > * {
@@ -3870,19 +3862,19 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 736px) {
   #footer {
-    padding: 1em 2em 0;
+    padding: 1em 2em;
   }
 }
 
 @media screen and (max-width: 480px) {
   #footer {
-    padding: 1em 1.5em 0;
+    padding: 1em 1.5em;
   }
 }
 
 @media screen and (max-width: 480px) {
   #footer {
-    padding: 1em 1em 0;
+    padding: 1em 1em;
   }
 }
 
@@ -3926,10 +3918,11 @@ body.is-preload #header.alt .logo {
 
 .kb-section-header {
   margin: 0;
-  font-size: 1.5em;
+  font-weight: 400;
 }
 
-.kb-section-body {
+.kb-section-body,
+.kb-section-body-cert {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -3948,22 +3941,10 @@ body.is-preload #header.alt .logo {
   line-height: 1;
 }
 .kb-section-body + hr {
-  margin: 2em 6em;
-}
-
-.kb-section-body-cert {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 1.5em 6em 2em;
 }
 
 .kb-section-body-cert > div {
   width: 16em;
   margin: 1em auto;
-}
-.cert-header {
-  font-size: 1.2em;
-}
-.cert-header > div {
-  font-size: 1.2em;
 }
