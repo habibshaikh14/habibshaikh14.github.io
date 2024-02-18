@@ -3948,22 +3948,31 @@ body.is-preload #header.alt .logo {
 }
 
 @media screen and (max-width: 736px) {
+  .kb-section-body {
+    gap: 24px;
+  }
   .kb-section-body>div {
-    width: 30px;
+    width: 36px;
     margin: 8px 12px;
   }
 }
 
 @media screen and (max-width: 392px) {
+  .kb-section-body {
+    gap: 20px;
+  }
   .kb-section-body>div {
-    width: 20px;
+    width: 24px;
     margin: 8px 12px;
   }
 }
 
 @media screen and (max-width: 368px) {
+  .kb-section-body {
+    gap: 16px;
+  }
   .kb-section-body>div {
-    width: 16px;
+    width: 24px;
     margin: 8px 12px;
   }
 }
