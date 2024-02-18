@@ -3927,7 +3927,7 @@ body.is-preload #header.alt .logo {
 }
 
 .kb-section-header {
-  margin: 0;
+  margin-bottom: 1em;
   font-weight: 400;
 }
 
@@ -3936,6 +3936,7 @@ body.is-preload #header.alt .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 36px;
 }
 
 .kb-section-body>div {
@@ -3978,5 +3979,5 @@ body.is-preload #header.alt .logo {
 
 .kb-section-body-cert>div {
   width: 16em;
-  margin: 1em auto;
+  margin: auto;
 }
